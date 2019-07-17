@@ -1,0 +1,50 @@
+.container {
+    max-width: #{1440px + 60px};
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.heading {
+    margin-bottom: 70px;
+    &__text {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $c-primary;
+        font-size: 48px;
+    }
+}
+
+.btn {
+    display: inline-block;
+    outline: none;
+    border: none;
+    background: $c-primary;
+    transition: .25s all ease;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.075em;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 25px 35px;
+    border-radius: 10px;
+    white-space: nowrap;
+    &:hover {
+        background: $c-secondary;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        margin-bottom: 20px;
+        &__text {
+            font-size: 28px;
+        }
+    }
+    .btn {
+        padding: 20px 30px;
+    }
+}
