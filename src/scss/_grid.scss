@@ -35,11 +35,17 @@
     &:hover {
         background: $c-secondary;
     }
+    &.is--blue {
+        background: #0090F0;
+        &:hover {
+            background: $c-secondary;
+        }
+    }
 }
 
 @media (max-width: 768px) {
     .heading {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         &__text {
             font-size: 28px;
         }
