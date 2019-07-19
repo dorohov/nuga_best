@@ -88,9 +88,81 @@
         })
 
         $('.l1__block-te__mobile__list').slick({
-            prevArrow: '',
-            nextArrow: '',
+            prevArrow: '.l1__block-te__mobile__controls button.is--prev',
+            nextArrow: '.l1__block-te__mobile__controls button.is--next',
             autoplay: true
+        })
+
+        function startAnimateNumbers() {
+            var numsItems = $('.l1__block-th__block__text__num')
+            numsItems.each(function() {
+                var thisNumber = $(this)
+                var thisNumberDataNum = $(this).data('num')
+
+                if($(this).visible(true) && !$(this).hasClass('is--finish')) {
+                    thisNumber.animateNumber({
+                        number: thisNumberDataNum
+                    }, {
+                        easing: 'swing',
+                        duration: 2000
+                    });
+                    thisNumber.addClass('is--finish')
+                }
+            })
+        }
+
+        function startAnimationBlocks() {
+            var blockItems = $('.is--animate-block')
+            blockItems.each(function() {
+                var thisBlock = $(this)
+                var thisAnim = $(this).data('animname')
+                var thisDelay = $(this).data('animdelay')
+
+                if($(this).visible(true) && !$(this).hasClass('is--finish')) {
+                    thisBlock
+                        .addClass('animated')
+                        .addClass(thisAnim)
+                        .css({
+                            "-webkit-animation-delay": thisDelay + 's',
+                            "-moz-animation-delay": thisDelay + 's',
+                            "-o-animation-delay": thisDelay + 's',
+                            "animation-delay": thisDelay + 's'
+                        })
+                }
+            })
+        }
+
+        startAnimateNumbers()
+        startAnimationBlocks()
+
+        $(document).scroll(function() {
+            startAnimateNumbers()
+            startAnimationBlocks()
+        })
+
+        $('.l1__block-on__scroll svg').on('click', function() {
+            $('html, body').animate({
+                'scrollTop':   $('.l1__block-tw').offset().top
+            }, 1000);
+        })
+
+        $('.anchor').on('click', function(e) {
+
+            e.preventDefault()
+
+            var target = $(this).attr('href')
+
+            $('html, body').animate({
+                'scrollTop':   $(target).offset().top
+            }, 1000);
+        })
+
+        $('.modal_btn').on('click', function(e) {
+            e.preventDefault()
+
+            var target = $(this).attr('href')
+
+            $(target).modal()
         })
 
     })

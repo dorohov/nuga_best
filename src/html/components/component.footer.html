@@ -1,4 +1,59 @@
 <div class="footer">
-    
+    <div class="footer__inner container">
+        <div class="footer__logo">
+            <a href="">
+                <img src="img/logo.svg" alt="">
+            </a>
+        </div>
+        <div class="footer__soc">
+            <div class="footer__soc__heading">Мы в социальных сетях</div>
+            <div class="footer__soc__list">
+                <div class="footer__soc__block">
+                    <a href="">
+                        <img src="img/s_facebook.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer__soc__block">
+                    <a href="">
+                        <img src="img/s_youtube.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer__soc__block">
+                    <a href="">
+                        <img src="img/s_vk.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer__soc__block">
+                    <a href="">
+                        <img src="img/s_instagram.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__contacts">
+            <a href="tel:+88005008357" class="footer__contacts__phone">
+                <div class="footer__contacts__phone__icon">
+                    @@include('component.svg.html', {"name": "i_phone"})
+                </div>
+                <div class="footer__contacts__phone__text">
+                    <div class="footer__contacts__phone__text__main">+7 (800) 500-83-57</div>
+                    <div class="footer__contacts__phone__text__sub">Бесплатно по России</div>
+                </div>
+            </a>
+            <div class="footer__contacts__btn">
+                <a href="#modal_quest" class="modal_btn btn">Задать вопрос</a>
+            </div>
+        </div>
+        <div class="footer__cop">
+            <div class="footer__cop__dorohov">
+                <a href="https://dorohovdesign.ru/">
+                    <img src="img/dorohov.svg" alt="">
+                </a>
+            </div>
+            <div class="footer__cop__text">
+                &copy; Nugabest, 2019 
+            </div>
+        </div>
+    </div>
 </div>
 @@include('component.scripts.html')

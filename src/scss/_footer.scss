@@ -1,0 +1,142 @@
+.footer {
+    padding: 50px 0;
+    background: #F7F7F7;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        img {
+            max-width: 215px;
+        }
+    }
+    &__soc {
+        max-width: 260px;
+        width: 100%;
+        &__list {
+            display: flex;
+        }
+        &__heading {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        &__block {
+            margin: 0 24px 0 0;
+        }
+    }
+    &__contacts {
+        &__phone {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            &:hover {
+                svg {
+                    fill: $c-primary;
+                }
+            }
+            &__icon {
+                svg {
+                    fill: $c-secondary;
+                    transition: .25s all ease;
+                }
+            }
+            &__text {
+                margin-left: 10px;
+                &__main {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: $c-primary;
+                    margin-bottom: 8px;
+                }
+                &__sub {
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #000;
+                }
+            }
+        }
+        &__btn {
+            .btn {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+    &__cop {
+        &__dorohov {
+            margin-bottom: 45px;
+            img {
+                max-width: 124px;
+            }
+        }
+        &__text {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .footer {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__logo,
+        &__soc,
+        &__contacts {
+            max-width: 50%;
+            width: 100%;
+            padding: 0 15px;
+        }
+        &__logo,
+        &__soc {
+            margin-bottom: 30px;
+        }
+        &__cop {
+            margin-left: auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &__logo,
+        &__soc,
+        &__contacts {
+            padding: 0;
+            max-width: 100%;
+        }
+        &__contacts {
+            margin-bottom: 30px;
+            max-width: 300px;
+            &__btn {
+                display: none;
+            }
+            &__phone {
+                margin-bottom: 0;
+            }
+        }
+        &__cop {
+            margin: 0 0 0 0;
+            width: 100%;
+            &__dorohov {
+                margin-bottom: 20px;
+            }
+        }
+        &__logo {
+            img {
+                max-width: 150px;
+            }
+        }
+        &__soc {
+            &__heading {
+                display: none;
+            }
+        }
+    }
+}

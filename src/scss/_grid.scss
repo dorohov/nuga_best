@@ -32,6 +32,7 @@
     padding: 25px 35px;
     border-radius: 10px;
     white-space: nowrap;
+    text-align: center;
     &:hover {
         background: $c-secondary;
     }
@@ -40,6 +41,15 @@
         &:hover {
             background: $c-secondary;
         }
+    }
+    &.is--inv {
+        background: $c-secondary;
+        &:hover {
+            background: $c-primary;
+        }
+    }
+    &.is--big {
+        padding: 25px 50px; 
     }
 }
 
