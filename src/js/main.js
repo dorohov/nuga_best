@@ -7,6 +7,9 @@
             autoWidth: true,
             dots: false,
             loop: true,
+            autoplay:true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause:true
         })
 
         $('.l1__block-sx__carousel__controls button.is--prev').on('click', function() {
