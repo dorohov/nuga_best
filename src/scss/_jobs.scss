@@ -1,0 +1,21 @@
+.jobs {
+    &-banner {
+        background: url(../../img/jobs.banner.jpg);
+        background-size: cover;
+        background-position: center;
+        &__inner {
+            min-height: calc(100vh - 100px);
+            height: 1px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+        }
+        &__right {
+            min-height: calc(100vh - 100px);
+            height: 1px;
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+}

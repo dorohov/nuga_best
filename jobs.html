@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Стань дилером — Nuga Best</title>
+    <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar__inner container">
+            <div class="navbar__logo">
+                <a href="#">
+                    <img src="img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="navbar__info">
+                <div class="navbar__info__block">
+                    <a href="mailto:vopros@nugabest.ru" class="navbar__info__block__inner">
+                        <div class="navbar__info__block__icon">
+                            <svg class="svg-i_mail-dims svg is--i_mail">
+                                <use xlink:href="img/svg/sprites.svg#i_mail"></use>
+                            </svg>
+                        </div>
+                        <div class="navbar__info__block__text">
+                            <div class="navbar__info__block__text__title">vopros@nugabest.ru</div>
+                            <div class="navbar__info__block__text__sub">Напишите нам</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="navbar__info__block">
+                    <a href="tel:+88005008357" class="navbar__info__block__inner">
+                        <div class="navbar__info__block__icon">
+                            <svg class="svg-i_phone-dims svg is--i_phone">
+                                <use xlink:href="img/svg/sprites.svg#i_phone"></use>
+                            </svg>
+                        </div>
+                        <div class="navbar__info__block__text">
+                            <div class="navbar__info__block__text__title">8 (800) 500-83-57</div>
+                            <div class="navbar__info__block__text__sub">Бесплатно по России</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="jobs-banner">
+            <div class="jobs-banner__inner is--c-pl">
+                <div class="jobs-banner__left">1</div>
+                <div class="jobs-banner__right">
+                    <img src="img/jobs.banner_mock.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="modal_quest" class="modal">
+        <div class="modal__inner">
+            <div class="modal__heading">Задайте ваш вопрос</div>
+            <form class="modal__form">
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваш вопрос">
+                <br>
+                <input type="submit" value="Отправить вопрос" class="btn is--inv">
+            </form>
+        </div>
+    </div>
+    <div id="modal__message_on" class="modal">
+        <div class="modal__inner">
+            <div class="modal__heading">Ваш вопрос отправлен!</div>
+            <div class="modal__text">В ближайшее время с Вами <br> свяжется менеджер</div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__inner container">
+            <div class="footer__logo">
+                <a href="">
+                    <img src="img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="footer__soc">
+                <div class="footer__soc__heading">Мы в социальных сетях</div>
+                <div class="footer__soc__list">
+                    <div class="footer__soc__block">
+                        <a href="">
+                            <img src="img/s_facebook.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="footer__soc__block">
+                        <a href="">
+                            <img src="img/s_youtube.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="footer__soc__block">
+                        <a href="">
+                            <img src="img/s_vk.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="footer__soc__block">
+                        <a href="">
+                            <img src="img/s_instagram.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <a href="tel:+88005008357" class="footer__contacts__phone">
+                    <div class="footer__contacts__phone__icon">
+                        <svg class="svg-i_phone-dims svg is--i_phone">
+                            <use xlink:href="img/svg/sprites.svg#i_phone"></use>
+                        </svg>
+                    </div>
+                    <div class="footer__contacts__phone__text">
+                        <div class="footer__contacts__phone__text__main">8 (800) 500-83-57</div>
+                        <div class="footer__contacts__phone__text__sub">Бесплатно по России</div>
+                    </div>
+                </a>
+                <div class="footer__contacts__btn">
+                    <a href="#modal_quest" class="modal_btn btn">Задать вопрос</a>
+                </div>
+            </div>
+            <div class="footer__cop">
+                <div class="footer__cop__dorohov">
+                    <a href="https://dorohovdesign.ru/">
+                        <img src="img/dorohov.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer__cop__text">
+                    &copy; Nugabest, 2019
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dist/js/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/bundle-min.js"></script>
+    <script>
+        svg4everybody()
+    </script>
+</body>
+
+</html>
