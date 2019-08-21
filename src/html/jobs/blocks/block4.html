@@ -1,0 +1,54 @@
+<div class="jobs-block-fo">
+    <div class="jobs-block-fo__inner container">
+        <div class="heading">
+            <div class="heading__text">Вакансии</div>
+            <div class="heading__dropdown __dropdown">
+                <div class="heading__dropdown__inner">
+                    <div class="heading__dropdown__title __dropdown-title">
+                        <span>Выберите город</span>
+                        @@include('../../components/component.svg.html', {"name": "heading_dropdown"})
+                    </div>
+                    <div class="heading__dropdown__list __dropdown-list">
+                        <ul>
+                            <li><a href="#"><span>Орел</span></a></li>
+                            <li class="is--active"><a href="#"><span>Москва</span></a></li>
+                            <li><a href="#"><span>Пермь</span></a></li>
+                            <li><a href="#"><span>Магадан</span></a></li>
+                            <li><a href="#"><span>Курск</span></a></li>
+                            <li><a href="#"><span>Воронеж</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jobs-block-fo__list">
+            @@include('block4.block.html', {
+                "img": "jobs.img1.jpg",
+                "title": "Директор зала"
+            })
+            @@include('block4.block.html', {
+                "img": "jobs.img2.jpg",
+                "title": "Продавец-консультант"
+            })
+            @@include('block4.block.html', {
+                "img": "jobs.img3.jpg",
+                "title": "Сервис-мастер"
+            })
+            @@include('block4.block.html', {
+                "img": "jobs.img4.jpg",
+                "title": "Бухгалтер"
+            })
+            @@include('block4.block.html', {
+                "img": "jobs.img5.jpg",
+                "title": "Администратор зала"
+            })
+            @@include('block4.block.html', {
+                "img": "jobs.img6.jpg",
+                "title": "Офис -Менеджер"
+            })
+        </div>
+        <div class="jobs-block-fo__btn">
+            <a href="#modal_quest" class="btn is--inv">наши вакансии</a>
+        </div>
+    </div>
+</div>
