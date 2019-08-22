@@ -1,5 +1,6 @@
 .jobs {
     &-banner {
+        overflow: hidden;
         background: url(../../img/jobs.banner.jpg);
         background-size: cover;
         background-position: center;
@@ -154,6 +155,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 margin: 0 -15px 45px -15px;
+                overflow: hidden;
             }
             &__block {
                 max-width: 33.33333333%;
@@ -249,6 +251,70 @@
                     font-weight: 500;
                     font-size: 18px;
                     color: #ECECEC;
+                }
+            }
+        }
+        &-sx {
+            padding-top: 110px;
+            padding-bottom: 110px;
+            background: #F6F9FC;
+            &__list {
+                max-width: 920px;
+                width: 100%;
+                margin: 0 auto;
+                &__inner {
+                    margin: 0 -15px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+            }
+            &__block {
+                max-width: #{205px + 30px};
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+                text-align: center;
+                &__top {
+                    margin-bottom: 40px;
+                    span {
+                        display: flex;
+                        width: 180px;
+                        height: 180px;
+                        align-items: center;
+                        justify-content: center;
+                        background: rgba(50, 60, 141, 0.14);
+                        border-radius: 100%;
+                        margin: 0 auto;
+                        svg {
+                            fill: $c-secondary;
+                        }
+                    }
+                }
+                &__title {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+            }
+        }
+        &-sv {
+            padding: 135px 0 95px 0;
+            &__btn {
+                margin-bottom: 50px;
+                text-align: center;
+            }
+            &__footer {
+                text-align: center;
+                &__title {
+                    margin-bottom: 45px;
+                    font-weight: 600;
+                    font-size: 24px;
+                }
+                &__desc {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 119.5%;
                 }
             }
         }
@@ -427,6 +493,39 @@
                 padding-top: 50px;
                 padding-bottom: 35px;
             }
+            &-sx {
+                &__block {
+                    max-width: 33.333333%;
+                    &__top {
+                        margin-bottom: 15px;
+                        span {
+                            width: 140px;
+                            height: 140px;
+                        }
+                    }
+                    &__title {
+                        font-size: 18px;
+                    }
+                }
+            }
+            &-sv {
+                padding: 50px 0;
+                &__btn {
+                    margin-bottom: 30px;
+                }
+                &__footer {
+                    br {
+                        display: none;
+                    }
+                    &__title {
+                        margin-bottom: 15px;
+                        font-size: 18px;
+                    }
+                    &__desc {
+                        font-size: 16px;
+                    }
+                }
+            }
         }
     }
 }
@@ -440,6 +539,13 @@
                 }
                 &__block {
                     max-width: 100%;
+                }
+            }
+            &-sx {
+                padding: 50px 0 10px 0;
+                &__block {
+                    min-width: 100%;
+                    margin-bottom: 40px;
                 }
             }
         }

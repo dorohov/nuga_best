@@ -8,7 +8,13 @@
     <main>
         @@include('jobs/jobs.main.html')
     </main>
-    @@include('landing1/blocks/block.modals.html')
+    @@include('modals/modal.quest.html')
+    @@include('modals/modal.job.html')
+    @@include('modals/modal.message.html', {
+        "title": "Ваш вопрос отправлен!",
+        "text": "В ближайшее время с Вами <br> свяжется менеджер",
+        "id": "message_on"
+    })
     @@include('components/component.footer.html')
 </body>
 </html>

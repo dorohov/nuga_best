@@ -1,4 +1,4 @@
-<div class="jobs-block-fo">
+<div class="jobs-block-fo" id="a_jobs">
     <div class="jobs-block-fo__inner container">
         <div class="heading">
             <div class="heading__text">Вакансии</div>
@@ -24,31 +24,37 @@
         <div class="jobs-block-fo__list">
             @@include('block4.block.html', {
                 "img": "jobs.img1.jpg",
-                "title": "Директор зала"
+                "title": "Директор зала",
+                "animdelay": "0"
             })
             @@include('block4.block.html', {
                 "img": "jobs.img2.jpg",
-                "title": "Продавец-консультант"
+                "title": "Продавец-консультант",
+                "animdelay": ".2"
             })
             @@include('block4.block.html', {
                 "img": "jobs.img3.jpg",
-                "title": "Сервис-мастер"
+                "title": "Сервис-мастер",
+                "animdelay": ".4"
             })
             @@include('block4.block.html', {
                 "img": "jobs.img4.jpg",
-                "title": "Бухгалтер"
+                "title": "Бухгалтер",
+                "animdelay": ".6"
             })
             @@include('block4.block.html', {
                 "img": "jobs.img5.jpg",
-                "title": "Администратор зала"
+                "title": "Администратор зала",
+                "animdelay": ".8"
             })
             @@include('block4.block.html', {
                 "img": "jobs.img6.jpg",
-                "title": "Офис -Менеджер"
+                "title": "Офис -Менеджер",
+                "animdelay": "1"
             })
         </div>
         <div class="jobs-block-fo__btn">
-            <a href="#modal_quest" class="btn is--inv">наши вакансии</a>
+            <a href="#modal_quest" class="btn is--inv">посмотреть все</a>
         </div>
     </div>
 </div>

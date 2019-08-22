@@ -1,10 +1,26 @@
 <div class="jobs-block-sx">
     <div class="jobs-block-sx__inner container">
-        <div class="heading is--white">
-            <div class="heading__text">Почему Мы</div>
+        <div class="heading">
+            <div class="heading__text">Что мы предлагаем</div>
         </div>
         <div class="jobs-block-sx__list">
-            
+            <div class="jobs-block-sx__list__inner">
+                @@include('block6.block.html', {
+                    "icon": "jobs_m1",
+                    "title": "Обучение",
+                    "animdelay": "0"
+                })
+                @@include('block6.block.html', {
+                    "icon": "jobs_m2",
+                    "title": "Вознаграждение",
+                    "animdelay": ".2"
+                })
+                @@include('block6.block.html', {
+                    "icon": "jobs_m3",
+                    "title": "Карьерный рост",
+                    "animdelay": ".4"
+                })
+            </div>
         </div>
     </div>
 </div>
