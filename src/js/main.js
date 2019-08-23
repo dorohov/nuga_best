@@ -97,7 +97,7 @@
         })
 
         function startAnimateNumbers() {
-            var numsItems = $('.l1__block-th__block__text__num')
+            var numsItems = $('.l1__block-th__block__text__num, .jobs-block-th__block__top span.is--num')
             numsItems.each(function() {
                 var thisNumber = $(this)
                 var thisNumberDataNum = $(this).data('num')

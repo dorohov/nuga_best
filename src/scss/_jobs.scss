@@ -26,6 +26,7 @@
                     line-height: 119.5%;
                     span {
                         color: $c-primary;
+                        font-weight: 600;
                     }
                 }
             }
@@ -124,6 +125,7 @@
                 &__top {
                     font-weight: 800;
                     font-size: 72px;
+                    font-style: italic;
                     span {
                         color: $c-secondary;
                     }
@@ -593,6 +595,15 @@
                         font-size: 16px;
                         br {
                             display: none;
+                        }
+                    }
+                }
+            }
+            &-sv {
+                &__inner {
+                    a {
+                        &.is--phone {
+                            display: block;
                         }
                     }
                 }
